@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大樂透</title>
+</head>
+
+<body>
+  <script>
+    let num = (x) => {
+      return Math.round(Math.random() * x + 1)
+    }
+
+    let lotton = () => {
+      let a = '第一區為'
+      let n = 0
+      for (i = 0; i <= 5; i++) {
+        n = num(38)
+        if (n > 38) {
+          i--
+          continue
+        } else {
+          a += n + ' '
+        }
+
+      }
+      document.write(a + '第二區為' + num(8))
+    }
+
+
+    lotton()
+
+    for (let i = 0; i < 6; i++) {
+
+    }
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
